@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // This ensures that the code runs after the DOM is fully loaded
-    document.getElementById('loadJsonButton').addEventListener('click', loadJson);
-
+    loadJson();
     function loadJson() {
         fetch('c.json')
             .then(response => response.json())
